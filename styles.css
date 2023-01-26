@@ -128,4 +128,45 @@ main {
   text-decoration: none;
   color: #fff;
   font-size: 1.7rem;
+  text-align: center;
+}
+
+.inputs-container input:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  color: #000;
+} 
+
+@media screen and (max-width: 950px) {
+  body {
+    flex-direction: column-reverse;
+  }
+  header {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .logo-header {
+    margin: 0;
+  }
+  main {
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .footerform-container a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footerform-container a {
+    font-size: 1.4rem;
+    text-align: center;
+  }
 }
